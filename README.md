@@ -4,7 +4,7 @@ A Telegram chatbot for IPDN cadets (*praja*) built with an **n8n AI agent** and 
 
 > Built solo during my internship at **Institut Pemerintahan Dalam Negeri (IPDN)** — Data Management & Information Systems Unit, July 2025. Status: **prototype**.
 
-![Workflow](screenshots/chatbot-praja-workflow.jpg)
+![Workflow](chatbot-praja-workflow.jpg)
 
 ## 🧩 Problem
 
@@ -35,7 +35,7 @@ A Telegram bot backed by an n8n AI agent:
 
 | Looking up data & resources | Email & calendar actions |
 |---|---|
-| ![Chat 1](screenshots/chatbot-praja-chat-1.jpg) | ![Chat 2](screenshots/chatbot-praja-chat-2.jpg) |
+| ![Chat 1](chatbot-praja-chat-1.jpg) | ![Chat 2](chatbot-praja-chat-2.jpg) |
 
 *Personal data (NPP) in the screenshots has been blurred.*
 
@@ -46,10 +46,10 @@ n8n · Google Gemini · Telegram Bot API · Google Sheets · Gmail API · Google
 ## 🚀 How to Run
 
 1. Run n8n with Docker:
-   ```bash
+```bash
    docker run -it --rm -p 5678:5678 -v n8n_data:/home/node/.n8n n8nio/n8n
-   ```
-2. Open `http://localhost:5678`, then **Workflows → Import from File** and choose `workflow/project_bot_praja.json`.
+```
+2. Open `http://localhost:5678`, then **Workflows → Import from File** and choose `project_bot_praja.json`.
 3. Create your own credentials in n8n: **Telegram** (token from @BotFather), **Google Gemini** API key, and **Google** OAuth for Sheets, Gmail, and Calendar.
 4. In every Google Sheets node, replace `YOUR_SPREADSHEET_ID` with your own spreadsheet ID; in the Gmail and Calendar nodes, replace `your-email@example.com`.
 5. Activate the workflow and start chatting with your bot on Telegram.
