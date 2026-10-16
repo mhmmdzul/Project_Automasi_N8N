@@ -1,0 +1,5 @@
+# Data n8n (berisi kunci & credential) — JANGAN di-upload
+n8n-data/
+.n8n/
+*.sqlite
+.env
